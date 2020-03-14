@@ -1,0 +1,7 @@
+steps:
+  - name: node:8.17.0
+    entrypoint: npm
+    args: ["install"]
+    dir: "functions"
+  - name: "gcr.io/[YOUR PROJECT NAME]/firebase"
+    args: ["deploy", "-P", "[YOUR PROJECT NAME]"]

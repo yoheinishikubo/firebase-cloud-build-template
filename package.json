@@ -1,0 +1,10 @@
+{
+  "name": "firebase-cloud-build-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "submit:image": "gcloud builds submit --config=image.yaml .",
+    "submit": "gcloud builds submit --config=cloudbuild.yaml ."
+  }
+}
